@@ -1,0 +1,715 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.white-block {
+  position: absolute;
+  height: 40px;
+  width: 60%;
+  background-color: #fff;
+}
+.white-block-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(20deg);
+}
+.white-block-right {
+  top: 0;
+  right: -50px;
+  transform: skew(20deg);
+}
+
+.btn-special-animation {
+  position: relative;
+  transition: background-color 0.4s;
+  overflow: hidden;
+  z-index: 0;
+}
+.btn-special-animation::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+  z-index: -1;
+}
+.btn-special-animation:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6a6140;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+}
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 10em 2em;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
+  width: 100%;
+}
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  content: "";
+  background-color: #fff;
+  transition: width 0.4s;
+}
+.burger-btn__bars {
+  width: 100%;
+}
+.burger-btn__bars::after {
+  top: 13px;
+  width: 60%;
+}
+.burger-btn__bars::before {
+  top: 27px;
+  width: 30%;
+  transition-delay: 0.1s;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgb(235, 229, 213), rgb(136, 124, 92));
+  transform: translateX(100%);
+  transition: 0.5s cubic-bezier(0.065, 0.05, 0.36, 1);
+  z-index: 100;
+}
+.nav--active {
+  transform: translateX(0);
+}
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+.nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+}
+.nav__item:hover::before {
+  transform: scaleY(0.5);
+}
+
+@-webkit-keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.nav-items-animation {
+  -webkit-animation: navItemsAnimation 1s both;
+          animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #6a6140;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 80vh;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("chair2-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+.header__heading {
+  font-family: "Varela Round", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 300;
+}
+.header__text {
+  font-size: 1.4rem;
+}
+.header__btn {
+  margin-top: 2em;
+  padding: 0.8em 1.6em;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 25px;
+  color: #6a6140;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #fff;
+}
+.header__btn::before {
+  background-color: #e5e4e2;
+}
+
+.clinic__title {
+  text-align: center;
+}
+
+.clinic__text {
+  text-align: center;
+}
+
+.clinic__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.clinic__img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.clinic__title {
+  margin-bottom: 0.5em;
+}
+.clinic__text {
+  font-size: 1.4rem;
+}
+
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("dentist-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-img__title {
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 0.5em;
+  font-size: 4.8rem;
+}
+.hero-img__text {
+  padding: 1em 0;
+  color: #6a6140;
+}
+
+.doctors__card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  color: #fff;
+  text-align: center;
+  perspective: 1000px;
+}
+.doctors__card:hover .doctors__card-img {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+.doctors__card:hover .doctors__card-info {
+  transform: rotateY(0);
+  opacity: 1;
+}
+.doctors__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  transition: transform 1s, opacity 1s;
+}
+.doctors__card-img--first {
+  background-image: linear-gradient(45deg, rgba(70, 214, 250, 0.75), rgba(78, 89, 250, 0.75)), url("tools-small.jpg");
+}
+.doctors__card-img--second {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("stethoscope-small.jpg");
+}
+.doctors__card-img--third {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("visit-small.jpg");
+}
+.doctors__card-img--fourth {
+  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("medic-small.jpg");
+}
+.doctors__card-img-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2.8rem;
+}
+.doctors__card-img-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+.doctors__card-img-info i {
+  margin-right: 0.3em;
+}
+.doctors__card-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: transform 1s, opacity 1s;
+}
+.doctors__card-info-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.2em;
+  font-family: "Varela Round", sans-serif;
+  font-size: 2.8rem;
+}
+.doctors__card-info-list {
+  margin: 0 auto;
+  width: 70%;
+  list-style: none;
+}
+.doctors__card-info-list-item {
+  padding: 1em;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eee;
+}
+.doctors__card-info-list-item:last-child {
+  border-bottom: none;
+}
+.doctors__card-info-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2em;
+  padding: 1em;
+  border-radius: 8px;
+  width: 80%;
+  border: none;
+  background-color: #a6e3e9;
+  cursor: pointer;
+}
+.doctors__card-info-btn::before {
+  background-color: #71c9ce;
+}
+
+.offers {
+  position: relative;
+  background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("healthcare-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.offers .section-heading {
+  color: #fff;
+}
+.offers .white-block-left {
+  background-color: #eee;
+}
+.offers__option {
+  margin: 1em 0;
+  box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.1803921569);
+  background-color: #fff;
+  overflow: hidden;
+}
+.offers__option-img {
+  width: 100%;
+  transition: transform 0.4s;
+}
+.offers__option-img:hover {
+  transform: scale(1.1);
+}
+.offers__option-info {
+  padding: 2em;
+  background-color: #fff;
+  z-index: 10;
+}
+.offers__option-heading {
+  margin-bottom: 0.5em;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+.offers__option-text {
+  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+  color: #6a6140;
+}
+.offers__option-btn {
+  margin-top: 1em;
+  padding: 0.8em;
+  width: 100%;
+  color: #6a6140;
+  background-color: #e5e4e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.offers__option-btn::before {
+  background-color: #cbf1f5;
+}
+
+.contact-text {
+  text-align: center;
+  color: #6a6140;
+}
+
+.contact {
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+}
+.contact .white-block-left {
+  background-color: rgb(77, 76, 76);
+}
+.contact .white-block-right {
+  background-color: #eee;
+}
+.contact__form, .contact__form-top {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+.contact__form-btn {
+  align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #a6e3e9;
+  cursor: pointer;
+}
+.contact__form-btn::before {
+  background-color: #71c9ce;
+}
+
+.footer {
+  color: #fff;
+  background-color: rgb(77, 76, 76);
+}
+.footer .wrapper {
+  padding: 2em 1em 1em;
+}
+.footer__box {
+  font-size: 1.2rem;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.footer__box-social {
+  margin: 2em 0 1em;
+}
+.footer__box-link {
+  padding: 0.3em;
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+.footer__box-link:hover {
+  color: #a6e3e9;
+}
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .clinic__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .clinic__box-text {
+    width: 55%;
+  }
+  .clinic__box-text--right {
+    text-align: right;
+  }
+  .clinic__box-text--left {
+    text-align: left;
+  }
+  .clinic__box-img {
+    width: 40%;
+  }
+  .clinic__box-img--right {
+    order: 1;
+  }
+  .clinic__img {
+    margin-bottom: 0;
+    max-height: 300px;
+  }
+  .offers__option {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+  }
+  .offers__option-img--right {
+    order: 1;
+  }
+  .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .offers__option-heading {
+    margin-bottom: 0.5em;
+    font-size: 3.6rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .white-block {
+    height: 50px;
+    width: 45%;
+  }
+  .header__heading {
+    font-size: 6.6rem;
+  }
+  .header__text {
+    font-size: 2.2rem;
+  }
+  .header__btn {
+    font-size: 1.6rem;
+  }
+  .clinic__text {
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 30rem 2em;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .hero-img__text {
+    font-size: 2.2rem;
+  }
+  .doctors__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .doctors__card {
+    margin: 1em;
+    width: 45%;
+  }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer__box {
+    margin: 0 2em;
+    width: 25%;
+  }
+  .footer__box:first-child {
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 1.4rem;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    color: #eee;
+    text-decoration: none;
+  }
+}
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .header {
+    background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("chair2-big.jpg");
+  }
+  .header__heading {
+    font-size: 10rem;
+  }
+  .nav__item {
+    font-size: 4.8rem;
+  }
+  .clinic__box {
+    margin: 5em 0;
+  }
+  .clinic__box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .clinic__title {
+    font-size: 3.6rem;
+  }
+  .clinic__text {
+    font-size: 2.2rem;
+  }
+  .hero-img {
+    padding: 40rem 2em;
+    background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("dentist-big.jpg");
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img hr {
+    width: 60%;
+    max-width: 900px;
+  }
+  .offers {
+    background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("healthcare-big.jpg");
+  }
+  .offers__option-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .offers__option-text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  .doctors__card {
+    width: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */

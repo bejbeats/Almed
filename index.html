@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almed</title>
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="icons8-tooth-32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/836fb3e1b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="burger-btn">
+      <div class="burger-btn__box">
+        <div class="burger-btn__bars"></div>
+      </div>
+    </button>
+    <nav class="nav">
+      <div class="nav__items">
+        <a href="#doctors" class="nav__item">Nasi lekarze</a>
+        <a href="#offersDent" class="nav__item">Usługi stomatologiczne</a>
+
+        <a href="#consultation" class="nav__item">Konsultacje</a>
+        <a href="#contact" class="nav__item">Kontakt</a>
+        <a href="#mainPage" class="nav__item">Strona główna</a>
+      </div>
+    </nav>
+    <header id="mainPage" class="header section">
+      <h1 class="header__heading">Almed</h1>
+
+      <p class="header__text">Niepubliczny Zakład Opieki Zdrowotnej</p>
+
+      <p class="header__text">Al Gen. A. Chruściela 73, 04-414 Warszawa</p>
+      <br />
+
+      <a href="#offers" class="header__btn btn-special-animation"
+        >Poznaj ofertę</a
+      >
+      <div class="white-block white-block-left"></div>
+    </header>
+    <main class="main">
+      <section class="clinic section-padding section white-section">
+        <div class="wrapper">
+          <h2 id="offers" class="section-heading">
+            Zapraszamy do naszej kliniki
+          </h2>
+
+          <div class="clinic__box">
+            <div class="clinic__box-img">
+              <img
+                src="chair-small.jpg"
+                alt="Fotel dentystyczny"
+                class="clinic__img"
+              />
+            </div>
+            <div class="clinic__box-text clinic__box-text--left">
+              <h3 class="clinic__title dent">Stomatologia</h3>
+              <p class="clinic__text">
+                Almed oferuje kompleksowe usługi z każdej dziedziny
+                stomatologii, zarówno dla dzieci jak i dorosłych. Leczą się u
+                nas całe rodziny począwszy od najmłodszych, ich rodziców oraz na
+                seniorach kończąc... Jest to możliwe dzięki dostępności
+                nowoczesnej aparatury medycznej, naszego wyjątkowego podejścia i
+                zaangażowania w leczeniu. Do naszych pacjentów podchodzimy z
+                pełnym profesjonalizmem oraz uczciwością.
+              </p>
+            </div>
+          </div>
+          <div class="clinic__box">
+            <div class="clinic__box-img clinic__box-img--right">
+              <img
+                src="small-doc.jpg"
+                alt="Postać lekarza"
+                class="clinic__img"
+              />
+            </div>
+            <div class="clinic__box-text clinic__box-text--right">
+              <h3 class="clinic__title">Laryngologia</h3>
+              <p class="clinic__text">
+                Nasi specjaliści posiadają wieloletnie doświadczenie kliniczne.
+                Oferujemy leczenie chorób nosa, uszu, gardła i krtani,
+                protezowanie narządu słuchu (dobór aparatów słuchowych),
+                kwalifikacje do zabiegów operacyjnych (kliniczna opieka) oraz
+                konsultacje audiologiczne.
+              </p>
+            </div>
+          </div>
+          <div class="clinic__box">
+            <div class="clinic__box-img clinic__box-img--left">
+              <img
+                src="small-gin.jpg"
+                alt="Fotel ginekologiczny"
+                class="clinic__img"
+              />
+            </div>
+            <div class="clinic__box-text clinic__box-text--left">
+              <h3 class="clinic__title">Ginekologia</h3>
+              <p class="clinic__text">
+                Zapraszamy na konsultacje i porady ginekologiczno-położnicze.
+                Zajmujemy się również prowadzeniem ciąży - cytologia, leczeniem
+                nadżerek - krioterapia (wymrażanie). Wykonujemy USG
+                ginekologiczno - położnicze.
+              </p>
+            </div>
+          </div>
+          <div class="clinic__box">
+            <div class="clinic__box-img clinic__box-img--right">
+              <img
+                src="gauge-small.jpg"
+                alt="Ciśnieniomierz"
+                class="clinic__img"
+              />
+            </div>
+            <div class="clinic__box-text clinic__box-text--right">
+              <h3 class="clinic__title">Medycyna pracy</h3>
+              <p class="clinic__text">
+                Wykonujemy badania do pracy - wstępne oraz okresowe, badania dla
+                kierowców, badania dla firm i osób prywatnych.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="consultation" class="hero-img section">
+        <div class="white-block white-block-left"></div>
+        <div class="white-block white-block-right"></div>
+        <p class="hero-img__title">Zapraszamy na bezpłatną konsultację</p>
+        <hr />
+        <p class="hero-img__text">
+          Lekarz dentysta zaplanuje leczenie i poda wszystkie alternatywne
+          rozwiązania wraz z kosztami. Taka wizyta do niczego nie zobowiązuje.
+          Pamiętaj, że przegląd stanu jamy ustnej i plan leczenia z wyceną są w
+          Przychodni ALMED zawsze bezpłatne.
+        </p>
+        <hr />
+      </section>
+      <section class="doctors section-padding section white-section">
+        <div class="wrapper">
+          <h2 id="doctors" class="section-heading">Nasi lekarze</h2>
+          <div class="doctors__cards">
+            <div class="doctors__card" onclick="void(0)">
+              <div class="doctors__card-img doctors__card-img--first">
+                <h3 class="doctors__card-img-title">Stomatologia</h3>
+                <p class="doctors__card-img-info">
+                  <i class="fas fa-angle-double-right"></i>Więcej informacji
+                </p>
+              </div>
+              <div class="doctors__card-info">
+                <h3 class="doctors__card-info-title">Stomatologia</h3>
+                <ul class="doctors__card-info-list">
+                  <li class="doctors__card-info-list-item">
+                    lek. med. Katarzyna Czerniawska
+                  </li>
+                  <li class="doctors__card-info-list-item">
+                    lek. med. Tomasz Czerniawski
+                  </li>
+                  <li class="doctors__card-info-list-item">
+                    lek. med. Natalia Mordzińska
+                  </li>
+                  <li class="doctors__card-info-list-item">
+                    lek. med. Alicja Saganowska
+                  </li>
+                  <li class="doctors__card-info-list-item">
+                    lek. med. Radosław Krzyszczyk
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="doctors__card" onclick="void(0)">
+              <div class="doctors__card-img doctors__card-img--second">
+                <h3 class="doctors__card-img-title">Laryngologia</h3>
+                <p class="doctors__card-img-info">
+                  <i class="fas fa-angle-double-right"></i>Więcej informacji
+                </p>
+              </div>
+              <div class="doctors__card-info">
+                <h3 class="doctors__card-info-title">Laryngologia</h3>
+                <ul class="doctors__card-info-list">
+                  <li class="doctors__card-info-list-item">
+                    prof. dr hab. med. Ireneusz Kantor
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="doctors__card" onclick="void(0)">
+              <div class="doctors__card-img doctors__card-img--third">
+                <h3 class="doctors__card-img-title">Ginekologia</h3>
+                <p class="doctors__card-img-info">
+                  <i class="fas fa-angle-double-right"></i>Więcej informacji
+                </p>
+              </div>
+              <div class="doctors__card-info">
+                <h3 class="doctors__card-info-title">Ginekologia</h3>
+                <ul class="doctors__card-info-list">
+                  <li class="doctors__card-info-list-item">
+                    lek. med. Arkadiusz Tosiak
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="doctors__card" onclick="void(0)">
+              <div class="doctors__card-img doctors__card-img--fourth">
+                <h3 class="doctors__card-img-title">Medycyna pracy</h3>
+                <p class="doctors__card-img-info">
+                  <i class="fas fa-angle-double-right"></i>Więcej informacji
+                </p>
+              </div>
+              <div class="doctors__card-info">
+                <h3 class="doctors__card-info-title">Medycyna pracy</h3>
+                <ul class="doctors__card-info-list">
+                  <li class="doctors__card-info-list-item">
+                    dr n.med. Robert SzamborskI
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offers section-padding section" id="offersDent">
+        <div class="white-block white-block-right"></div>
+        <div class="white-block white-block-left"></div>
+        <h2 class="section-heading">Usługi stomatologiczne</h2>
+        <div class="wrapper">
+          <div class="offers__box">
+            <div class="offers__option">
+              <img
+                src="love-small.jpg"
+                alt="Karteczka z napisem kocham mojego dentystę"
+                class="offers__option-img"
+              />
+              <div class="offers__option-info">
+                <h3 class="offers__option-heading">Leczenie</h3>
+                <p class="offers__option-text">
+                  Leczenie zachowawcze, wybielanie zębów lampą specjalistyczną,
+                  usuwanie kamienia i osadu ultradźwiękami oraz przez
+                  piaskowanie, RTG zębów, leczenie w narkozie, leczenie laserem
+                  oraz ozonem, bezpłatne przeglądy.
+                </p>
+                <p class="offers__option-text">
+                  Leczenie dzieci, lakowanie i fluoryzacja.
+                </p>
+                <p class="offers__option-text">
+                  DIAGNOdent - wykrywanie próchnicy w początkowej fazie.
+                </p>
+                <p class="offers__option-text">Chirurgia stomatologiczna.</p>
+              </div>
+            </div>
+            <div class="offers__option">
+              <img
+                src="braces-small.jpg"
+                alt="Aparat na zębach"
+                class="offers__option-img offers__option-img--right"
+              />
+              <div class="offers__option-info">
+                <h3 class="offers__option-heading">Protetyka i ortodoncja</h3>
+                <p class="offers__option-text">
+                  Precyzyjne wykonanie uzupełnień protetycznych jest kluczem do
+                  sukcesu - pięknego uśmiechu na wiele lat. Klasyczne korony czy
+                  pełnoceramiczne dają efekt estetyczny, który spełni twoje
+                  oczekiwania.
+                </p>
+                <p class="offers__option-text">
+                  Korekta wad zgryzu dotyczy każdej grupy wiekowej. W naszym
+                  gabinecie leczymy wady zgryzu u ludzi młodych, jak i
+                  dojrzałych po 35, 40 roku życia. Poza klasycznymi aparatami
+                  stałymi stosujemy estetyczne zamki ceramiczne z białą
+                  niewidoczną ligaturą. W niektórych sytuacjach możliwe jest
+                  zastosowanie zamków po wewnętrznej stronie zębów. Jeśli
+                  pacjent nie chce, bądź nie może mieć stałego aparatu
+                  proponujemy nowoczesne, niewidoczne aparaty na zęby
+                  Invisalign® i Clear Aligner®. Umożliwiają one estetyczne
+                  leczenie wady zgryzu. Leczenie ortodontyczne to także korekta
+                  ustawienia zębów jako wstępny etap, przygotowanie do leczenia
+                  implantologicznego i protetycznego, również z użyciem
+                  implantów ortodontycznych.
+                </p>
+              </div>
+            </div>
+            <div class="offers__option">
+              <img
+                src="lemon-small.jpg"
+                alt="Zęby kobiety"
+                class="offers__option-img"
+              />
+              <div class="offers__option-info">
+                <h3 class="offers__option-heading">Stomatologia estetyczna</h3>
+                <p class="offers__option-text">
+                  Stosunkowo młoda dziedzina specjalizacji która szczególny
+                  nacisk kładzie na wygląd korony, zęba i całego uśmiechu z
+                  uwzględnieniem kształtu, koloru, harmonii, dziąseł. Poprawa
+                  estetyki to nie tylko wybielanie zębów, licówki
+                  pełnoceramiczne, korony pełnoceramiczne, a także zachowawcze i
+                  chirurgiczne metody rekonstrukcji tkanek zębów i dziąseł.
+                </p>
+              </div>
+            </div>
+            <div class="offers__option">
+              <img
+                src="brush1-small.jpg"
+                alt="Szczoteczki do zębów"
+                class="offers__option-img offers__option-img--right"
+              />
+              <div class="offers__option-info">
+                <h3 class="offers__option-heading">Higienizacja</h3>
+                <p class="offers__option-text">
+                  Zabiegi higienizacyjne (usuwanie kamienia nazębnego, skaling,
+                  piaskowanie, lakierowanie) są podstawą w zapobieganiu
+                  próchnicy, paradontozy, chorób przyzębia. W naszym gabinecie
+                  stanowią nieodłączny element terapeutyczny, który obowiązkowo
+                  rozpoczyna i kończy cały proces leczenia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact section-padding section white-section">
+        <div class="white-block white-block-right"></div>
+        <div class="white-block white-block-left"></div>
+        <h2 id="contact" class="section-heading">
+          ALMED NZOZ- Al Gen. A. Chruściela 73, 04-414 Warszawa
+        </h2>
+        <p class="header__text contact-text">pn-pt: 09:00-20:00</p>
+        <br />
+        <p class="header__text contact-text">tel. (22) 612 98 85</p>
+        <p class="header__text contact-text">kom. 606 66 00 88</p>
+
+        <div class="wrapper"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__boxes">
+          <div class="footer__box">
+            <h3 class="footer__box-title">
+              <i class="fas fa-solid fa-tooth"></i>
+              Projekt i wykonanie: Hubert G.
+            </h3>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="footer__bottom-text">
+        &copy; <span class="footer__year"></span> Copyright ALMED- Niepubliczny
+        Zakład Opieki Zdrowotnej
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
