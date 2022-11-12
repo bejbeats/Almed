@@ -447,7 +447,9 @@ body {
 .offers__option-btn::before {
   background-color: #cbf1f5;
 }
-
+.address {
+  font-size: 2rem;
+}
 .contact-text {
   text-align: center;
   color: #6a6140;
