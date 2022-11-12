@@ -118,7 +118,9 @@ body {
   width: 40px;
   height: 30px;
 }
-.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+.burger-btn__bars,
+.burger-btn__bars::after,
+.burger-btn__bars::before {
   position: absolute;
   right: 0;
   height: 3px;
@@ -147,7 +149,11 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(45deg, rgb(235, 229, 213), rgb(136, 124, 92));
+  background-image: linear-gradient(
+    45deg,
+    rgb(235, 229, 213),
+    rgb(136, 124, 92)
+  );
   transform: translateX(100%);
   transition: 0.5s cubic-bezier(0.065, 0.05, 0.36, 1);
   z-index: 100;
@@ -198,7 +204,7 @@ body {
 }
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
-          animation: navItemsAnimation 1s both;
+  animation: navItemsAnimation 1s both;
 }
 
 .black-bars-color,
@@ -217,7 +223,12 @@ body {
   height: 80vh;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("chair2-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(235, 229, 213, 0.9979342079) 25%,
+      rgba(136, 124, 92, 0.398494432) 100%
+    ),
+    url("chair2-small.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -274,7 +285,12 @@ body {
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("dentist-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(235, 229, 213, 0.9979342079) 25%,
+      rgba(136, 124, 92, 0.398494432) 100%
+    ),
+    url("dentist-small.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -316,16 +332,36 @@ body {
   transition: transform 1s, opacity 1s;
 }
 .doctors__card-img--first {
-  background-image: linear-gradient(45deg, rgba(70, 214, 250, 0.75), rgba(78, 89, 250, 0.75)), url("tools-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(70, 214, 250, 0.75),
+      rgba(78, 89, 250, 0.75)
+    ),
+    url("tools-small.jpg");
 }
 .doctors__card-img--second {
-  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("stethoscope-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(8, 206, 255, 0.75),
+      rgba(8, 24, 255, 0.75)
+    ),
+    url("stethoscope-small.jpg");
 }
 .doctors__card-img--third {
-  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("visit-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(20, 105, 241, 0.75),
+      rgba(42, 10, 184, 0.75)
+    ),
+    url("visit-small.jpg");
 }
 .doctors__card-img--fourth {
-  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("medic-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(190, 10, 214, 0.75),
+      rgba(68, 0, 255, 0.75)
+    ),
+    url("medic-small.jpg");
 }
 .doctors__card-img-title {
   font-family: "Varela Round", sans-serif;
@@ -346,7 +382,11 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(0, 78, 255) 0%,
+    rgb(0, 212, 255) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +434,12 @@ body {
 
 .offers {
   position: relative;
-  background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("healthcare-small.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(235, 229, 213, 0.9979342079) 25%,
+      rgba(136, 124, 92, 0.398494432) 100%
+    ),
+    url("healthcare-small.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -447,9 +492,11 @@ body {
 .offers__option-btn::before {
   background-color: #cbf1f5;
 }
+
 .address {
   font-size: 2rem;
 }
+
 .contact-text {
   text-align: center;
   color: #6a6140;
@@ -466,7 +513,8 @@ body {
 .contact .white-block-right {
   background-color: #eee;
 }
-.contact__form, .contact__form-top {
+.contact__form,
+.contact__form-top {
   display: flex;
   flex-direction: column;
 }
@@ -665,7 +713,12 @@ body {
     right: 50px;
   }
   .header {
-    background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("chair2-big.jpg");
+    background-image: linear-gradient(
+        45deg,
+        rgba(235, 229, 213, 0.9979342079) 25%,
+        rgba(136, 124, 92, 0.398494432) 100%
+      ),
+      url("chair2-big.jpg");
   }
   .header__heading {
     font-size: 10rem;
@@ -690,7 +743,12 @@ body {
   }
   .hero-img {
     padding: 40rem 2em;
-    background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("dentist-big.jpg");
+    background-image: linear-gradient(
+        45deg,
+        rgba(235, 229, 213, 0.9979342079) 25%,
+        rgba(136, 124, 92, 0.398494432) 100%
+      ),
+      url("dentist-big.jpg");
   }
   .hero-img__title {
     font-size: 7.2rem;
@@ -700,11 +758,16 @@ body {
     max-width: 900px;
   }
   .offers {
-    background-image: linear-gradient(45deg, rgba(235, 229, 213, 0.9979342079) 25%, rgba(136, 124, 92, 0.398494432) 100%), url("healthcare-big.jpg");
+    background-image: linear-gradient(
+        45deg,
+        rgba(235, 229, 213, 0.9979342079) 25%,
+        rgba(136, 124, 92, 0.398494432) 100%
+      ),
+      url("healthcare-big.jpg");
   }
   .offers__option-img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .offers__option-text {
     font-size: 1.5rem;
@@ -714,4 +777,4 @@ body {
   .doctors__card {
     width: 20%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
